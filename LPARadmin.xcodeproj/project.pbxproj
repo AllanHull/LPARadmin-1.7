@@ -15,6 +15,13 @@
 		C5808C7E24FC6EE900180CD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5808C7C24FC6EE900180CD8 /* LaunchScreen.storyboard */; };
 		C5808C8924FC6EEA00180CD8 /* LPARadminTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5808C8824FC6EEA00180CD8 /* LPARadminTests.swift */; };
 		C5808C9424FC6EEA00180CD8 /* LPARadminUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5808C9324FC6EEA00180CD8 /* LPARadminUITests.swift */; };
+		C5808CA324FC874000180CD8 /* PlateContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5808CA224FC874000180CD8 /* PlateContentView.swift */; };
+		C5808CA724FC8A8400180CD8 /* PlateViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5808CA624FC8A8400180CD8 /* PlateViewContentView.swift */; };
+		C5A81DC725465A9200CBD317 /* addContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A81DC625465A9200CBD317 /* addContentView.swift */; };
+		C5A81DCF25465B4B00CBD317 /* ContentViewTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A81DCE25465B4B00CBD317 /* ContentViewTemp.swift */; };
+		C5A81DD425465D1600CBD317 /* deleteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A81DD325465D1600CBD317 /* deleteListView.swift */; };
+		C5A81DDC25465D3A00CBD317 /* modifyContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A81DDB25465D3A00CBD317 /* modifyContentView.swift */; };
+		C5A81DEA25476C2B00CBD317 /* deleteContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A81DE925476C2B00CBD317 /* deleteContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		C5808C8F24FC6EEA00180CD8 /* LPARadminUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LPARadminUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5808C9324FC6EEA00180CD8 /* LPARadminUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPARadminUITests.swift; sourceTree = "<group>"; };
 		C5808C9524FC6EEA00180CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5808CA224FC874000180CD8 /* PlateContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateContentView.swift; sourceTree = "<group>"; };
+		C5808CA624FC8A8400180CD8 /* PlateViewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateViewContentView.swift; sourceTree = "<group>"; };
+		C5A81DC625465A9200CBD317 /* addContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addContentView.swift; sourceTree = "<group>"; };
+		C5A81DCE25465B4B00CBD317 /* ContentViewTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewTemp.swift; sourceTree = "<group>"; };
+		C5A81DD325465D1600CBD317 /* deleteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deleteListView.swift; sourceTree = "<group>"; };
+		C5A81DDB25465D3A00CBD317 /* modifyContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modifyContentView.swift; sourceTree = "<group>"; };
+		C5A81DE925476C2B00CBD317 /* deleteContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deleteContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +113,14 @@
 		C5808C7024FC6EE800180CD8 /* LPARadmin */ = {
 			isa = PBXGroup;
 			children = (
+				C5A81DC22546597F00CBD317 /* modifyLPAR */,
+				C5A81DBE254658EF00CBD317 /* deleteLPAR */,
+				C5A81DBA2546588B00CBD317 /* addLPAR */,
+				C5808CA124FC7F3600180CD8 /* Plates */,
 				C5808C7124FC6EE800180CD8 /* AppDelegate.swift */,
 				C5808C7324FC6EE800180CD8 /* SceneDelegate.swift */,
 				C5808C7524FC6EE800180CD8 /* ContentView.swift */,
+				C5A81DCE25465B4B00CBD317 /* ContentViewTemp.swift */,
 				C5808C7724FC6EE900180CD8 /* Assets.xcassets */,
 				C5808C7C24FC6EE900180CD8 /* LaunchScreen.storyboard */,
 				C5808C7F24FC6EE900180CD8 /* Info.plist */,
@@ -134,6 +153,40 @@
 				C5808C9524FC6EEA00180CD8 /* Info.plist */,
 			);
 			path = LPARadminUITests;
+			sourceTree = "<group>";
+		};
+		C5808CA124FC7F3600180CD8 /* Plates */ = {
+			isa = PBXGroup;
+			children = (
+				C5808CA224FC874000180CD8 /* PlateContentView.swift */,
+				C5808CA624FC8A8400180CD8 /* PlateViewContentView.swift */,
+			);
+			path = Plates;
+			sourceTree = "<group>";
+		};
+		C5A81DBA2546588B00CBD317 /* addLPAR */ = {
+			isa = PBXGroup;
+			children = (
+				C5A81DC625465A9200CBD317 /* addContentView.swift */,
+			);
+			path = addLPAR;
+			sourceTree = "<group>";
+		};
+		C5A81DBE254658EF00CBD317 /* deleteLPAR */ = {
+			isa = PBXGroup;
+			children = (
+				C5A81DD325465D1600CBD317 /* deleteListView.swift */,
+				C5A81DE925476C2B00CBD317 /* deleteContentView.swift */,
+			);
+			path = deleteLPAR;
+			sourceTree = "<group>";
+		};
+		C5A81DC22546597F00CBD317 /* modifyLPAR */ = {
+			isa = PBXGroup;
+			children = (
+				C5A81DDB25465D3A00CBD317 /* modifyContentView.swift */,
+			);
+			path = modifyLPAR;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +252,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Allan Hull";
 				TargetAttributes = {
 					C5808C6D24FC6EE800180CD8 = {
@@ -267,7 +320,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5808CA724FC8A8400180CD8 /* PlateViewContentView.swift in Sources */,
+				C5A81DEA25476C2B00CBD317 /* deleteContentView.swift in Sources */,
 				C5808C7224FC6EE800180CD8 /* AppDelegate.swift in Sources */,
+				C5A81DDC25465D3A00CBD317 /* modifyContentView.swift in Sources */,
+				C5A81DC725465A9200CBD317 /* addContentView.swift in Sources */,
+				C5A81DD425465D1600CBD317 /* deleteListView.swift in Sources */,
+				C5808CA324FC874000180CD8 /* PlateContentView.swift in Sources */,
+				C5A81DCF25465B4B00CBD317 /* ContentViewTemp.swift in Sources */,
 				C5808C7424FC6EE800180CD8 /* SceneDelegate.swift in Sources */,
 				C5808C7624FC6EE800180CD8 /* ContentView.swift in Sources */,
 			);
@@ -342,6 +402,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -366,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -402,6 +463,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -420,7 +482,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
