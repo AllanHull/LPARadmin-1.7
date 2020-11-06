@@ -39,39 +39,40 @@ struct addContentView: View {
     var body: some View {
         VStack (alignment: .leading) {
             
-            TextField("Enter State...", text: $textState)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
+            Group {
+                
+                TextField("Enter State...", text: $textState)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                
+                TextField("Enter Name...", text: $textName)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+
+                TextField("Enter Description...", text: $textDescription)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
     
-
-            TextField("Enter Description...", text: $textDescription)
-            .textFieldStyle(RoundedBorderTextFieldStyle())
+                TextField("Enter Year...", text: $textYear)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
     
-
-            TextField("Enter Year...", text: $textYear)
-            .textFieldStyle(RoundedBorderTextFieldStyle())
+                TextField("Enter Cost...", text: $textCost)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
     
-
-            TextField("Enter Cost...", text: $textCost)
-            .textFieldStyle(RoundedBorderTextFieldStyle())
+                TextField("Enter Category...", text: $textCategory)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
     
-
-            TextField("Enter Category...", text: $textCategory)
-            .textFieldStyle(RoundedBorderTextFieldStyle())
+                TextField("Enter Imagelink...", text: $textImagelink)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
     
+                TextField("Enter Infolink...", text: $textInfolink)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
 
-            TextField("Enter Imagelink...", text: $textImagelink)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-    
+                TextField("Enter Latitude...", text: $textLatitude)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
 
-            TextField("Enter Infolink...", text: $textInfolink)
-            .textFieldStyle(RoundedBorderTextFieldStyle())
-
-            TextField("Enter Latitude...", text: $textLatitude)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-
-            TextField("Enter Longitude...", text: $textLongitude)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
+                TextField("Enter Longitude...", text: $textLongitude)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
             
+            } // end Group
+ 
             // Button: Add
             Button(action: {
                 print("Add")
@@ -85,9 +86,11 @@ struct addContentView: View {
                     .padding()
                     .border(Color.red, width: 5)
             }
+        
     
         } // end VStack()
-                
+        
+        
     } // end Body()
     
     // Function: addRecord()
@@ -103,16 +106,28 @@ struct addContentView: View {
         print("Latitude = ",$textLatitude)
         print("Longitude = ",$textLongitude)
         print("Function: addRecord END")
+        
+        // call plates to add record
+        CallPlate(s1: textState)
     }
     
     // Function: HTTP CallPlate
-    func CallPlate() {
+    func CallPlate(s1: String) {
+        
+        print(">>> CallPlate <<<")
+        print("State = ",$textState)
+        print("State String = ",s1)
+        
+//  return()
+        
+        print(">>> Return <<<")
         
         var paramsDictionary = [String:Any]()
       
-            paramsDictionary["identifier"] = "23"
-            paramsDictionary["state"] = "Nebraska"
-            paramsDictionary["name"] = "Military"
+            paramsDictionary["identifier"] = "103"
+//            paramsDictionary["state"] = "Kansas"
+            paramsDictionary["state"] = s1
+            paramsDictionary["name"] = "Military-1"
             paramsDictionary["description"] = "Military Retired"
             paramsDictionary["year"] = "2020"
             paramsDictionary["cost"] = "10.00"
