@@ -97,6 +97,7 @@ struct addContentView: View {
     func addRecord() {
         print("Function: addRecord START")
         print("State = ",$textState)
+        print("Name = ",$textName)
         print("Description = ",$textDescription)
         print("Year = ",$textYear)
         print("Cost = ",$textCost)
@@ -108,17 +109,35 @@ struct addContentView: View {
         print("Function: addRecord END")
         
         // call plates to add record
-        CallPlate(s1: textState)
+        CallPlate(s1: textState,
+                  s2: textName,
+                  s3: textDescription,
+                  s4: textYear,
+                  s5: textCost,
+                  s6: textCategory,
+                  s7: textImagelink,
+                  s8: textInfolink,
+                  s9: textLatitude,
+                  s10: textLongitude)
     }
     
     // Function: HTTP CallPlate
-    func CallPlate(s1: String) {
+    func CallPlate(s1: String,
+                   s2: String,
+                   s3: String,
+                   s4: String,
+                   s5: String,
+                   s6: String,
+                   s7: String,
+                   s8: String,
+                   s9: String,
+                   s10: String) {
         
         print(">>> CallPlate <<<")
         print("State = ",$textState)
         print("State String = ",s1)
         
-//  return()
+  return()
         
         print(">>> Return <<<")
         
